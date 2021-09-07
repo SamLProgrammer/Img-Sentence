@@ -8,7 +8,7 @@ const imgUpload = (req, res) => {
             byteContent).then(function (response) {
                 res.send(response.data)
             }).catch(err => {
-                console.log(err)
+                console.log('err')
             });
     } else {
         res.send('Something went wrong :c')
